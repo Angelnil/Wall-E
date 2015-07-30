@@ -1,0 +1,16 @@
+
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '7.0'
+
+pod 'AFNetworking', :head
+
+pod 'JSONModel', :head
+
+pod 'UIImage-Resize', :head
+
+pod 'UIImage-Categories', :head
+
+pod 'BlocksKit', :head
+
+pod 'HMSegmentedControl', :head

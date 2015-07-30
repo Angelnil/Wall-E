@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Test View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="TestViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="dcq-Ut-wRJ">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="500"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" id="zgI-XF-thr">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zgI-XF-thr" id="FZZ-do-LSk">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xfm-Vo-8gN" customClass="ClickLab">
+                                <rect key="frame" x="20" y="520" width="560" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dcq-Ut-wRJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4Jc-GR-YMp"/>
+                            <constraint firstAttribute="bottom" secondItem="xfm-Vo-8gN" secondAttribute="bottom" constant="20" id="5qL-fy-lt2"/>
+                            <constraint firstAttribute="trailing" secondItem="dcq-Ut-wRJ" secondAttribute="trailing" id="LT3-m3-koB"/>
+                            <constraint firstItem="xfm-Vo-8gN" firstAttribute="top" secondItem="dcq-Ut-wRJ" secondAttribute="bottom" constant="20" id="Tgf-dG-1fw"/>
+                            <constraint firstItem="xfm-Vo-8gN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="VEN-56-WM9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dcq-Ut-wRJ" secondAttribute="bottom" constant="100" id="ZP4-bh-QQt"/>
+                            <constraint firstAttribute="trailing" secondItem="xfm-Vo-8gN" secondAttribute="trailing" constant="20" id="ZbM-I2-gfe"/>
+                            <constraint firstItem="dcq-Ut-wRJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="yuc-wU-VvA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lineView" destination="xfm-Vo-8gN" id="JWM-o3-6fP"/>
+                        <outlet property="tableView" destination="dcq-Ut-wRJ" id="Oc4-WO-pWL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="205"/>
+        </scene>
+    </scenes>
+</document>
