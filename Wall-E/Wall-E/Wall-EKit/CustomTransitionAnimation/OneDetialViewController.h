@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AnimationBasevViewController.h"
 
-@interface OneDetialViewController : UIViewController
+@interface OneDetialViewController : AnimationBasevViewController
 
 /** 前一个也传过的图片 */
 @property (nonatomic, weak) UIImage *image;

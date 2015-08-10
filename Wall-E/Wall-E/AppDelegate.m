@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "UIPictureSeleterVC.h"
+#import "PictureSelectViewController.h"
 
 @interface AppDelegate ()
 
@@ -19,7 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-//    UIPictureSeleterVC *vc = [[UIPictureSeleterVC alloc] init];
+//    PictureSelectViewController *vc = [[PictureSelectViewController alloc] init];
 //    self.window.rootViewController = vc;
     
     return YES;

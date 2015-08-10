@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "ONeCollectionViewCell.h"
+#import "AnimationBasevViewController.h"
 
-@interface ONeCollectionViewController : UICollectionViewController
+@interface ONeCollectionViewController : AnimationBasevViewController
 
 /** 选中的 cell */
 @property (nonatomic, weak) ONeCollectionViewCell *selectCell;

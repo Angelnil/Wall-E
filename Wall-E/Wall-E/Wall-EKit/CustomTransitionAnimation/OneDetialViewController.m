@@ -7,12 +7,15 @@
 //
 
 #import "OneDetialViewController.h"
+#import "PictureSelectViewController.h"
+
 
 @interface OneDetialViewController ()
 
 @end
 
 @implementation OneDetialViewController
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -22,6 +25,10 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)click:(UIButton *)sender {
+    PictureSelectViewController *pic = [[PictureSelectViewController alloc] init];
+    [self presentViewController:pic animated:YES completion:nil];
 }
 
 /*

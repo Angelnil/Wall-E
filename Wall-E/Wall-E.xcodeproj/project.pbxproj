@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4573D0791B70A770001F9C4B /* AnimationBasevViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4573D0781B70A770001F9C4B /* AnimationBasevViewController.m */; };
 		458F40871B20296E004C6B74 /* NSDate+TimeUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F40801B20296E004C6B74 /* NSDate+TimeUtils.m */; };
 		458F40881B20296E004C6B74 /* NSString+StringUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F40821B20296E004C6B74 /* NSString+StringUtils.m */; };
 		458F40891B20296E004C6B74 /* UIColor+ARGBString.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F40841B20296E004C6B74 /* UIColor+ARGBString.m */; };
 		458F408A1B20296E004C6B74 /* UIView+ViewUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F40861B20296E004C6B74 /* UIView+ViewUtils.m */; };
-		458F40931B21365C004C6B74 /* UIPictureSeleterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F40921B21365C004C6B74 /* UIPictureSeleterVC.m */; };
 		458F40951B214348004C6B74 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 458F40941B214348004C6B74 /* AssetsLibrary.framework */; };
 		458F40991B21861A004C6B74 /* PictureItemCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F40971B21861A004C6B74 /* PictureItemCollectionViewCell.m */; };
 		458F409A1B21861A004C6B74 /* PictureItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 458F40981B21861A004C6B74 /* PictureItemCollectionViewCell.xib */; };
@@ -30,10 +30,10 @@
 		45EC9D001AD3CAE000F20938 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45EC9CB61AD3CAE000F20938 /* Main.storyboard */; };
 		45EC9D011AD3CAE000F20938 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45EC9CB91AD3CAE000F20938 /* BaseViewController.m */; };
 		45EC9D021AD3CAE000F20938 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45EC9CBA1AD3CAE000F20938 /* Images.xcassets */; };
-		45EC9D031AD3CAE000F20938 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 45EC9CBB1AD3CAE000F20938 /* Info.plist */; };
 		45EC9D041AD3CAE000F20938 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45EC9CBC1AD3CAE000F20938 /* main.m */; };
 		45EC9D1E1AD3CAE000F20938 /* WEBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45EC9CFB1AD3CAE000F20938 /* WEBaseView.m */; };
 		45EC9D231AD4D1E600F20938 /* BaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45EC9D221AD4D1E600F20938 /* BaseNavigationViewController.m */; };
+		45F5A3381B747B9A0021E826 /* PictureSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F5A3371B747B9A0021E826 /* PictureSelectViewController.m */; };
 		45FA56121B0F000D00A86480 /* AFNManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 45FA55DA1B0F000D00A86480 /* AFNManager.m */; };
 		45FA56131B0F000D00A86480 /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 45FA55DC1B0F000D00A86480 /* DataModel.m */; };
 		45FA56141B0F000D00A86480 /* YLYPageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45FA55E11B0F000D00A86480 /* YLYPageScrollView.m */; };
@@ -67,6 +67,8 @@
 
 /* Begin PBXFileReference section */
 		0A2B7877F8F341A8E82B25A0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		4573D0771B70A770001F9C4B /* AnimationBasevViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationBasevViewController.h; sourceTree = "<group>"; };
+		4573D0781B70A770001F9C4B /* AnimationBasevViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationBasevViewController.m; sourceTree = "<group>"; };
 		458F407F1B20296E004C6B74 /* NSDate+TimeUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+TimeUtils.h"; sourceTree = "<group>"; };
 		458F40801B20296E004C6B74 /* NSDate+TimeUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TimeUtils.m"; sourceTree = "<group>"; };
 		458F40811B20296E004C6B74 /* NSString+StringUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+StringUtils.h"; sourceTree = "<group>"; };
@@ -75,8 +77,6 @@
 		458F40841B20296E004C6B74 /* UIColor+ARGBString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ARGBString.m"; sourceTree = "<group>"; };
 		458F40851B20296E004C6B74 /* UIView+ViewUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewUtils.h"; sourceTree = "<group>"; };
 		458F40861B20296E004C6B74 /* UIView+ViewUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewUtils.m"; sourceTree = "<group>"; };
-		458F40911B21365C004C6B74 /* UIPictureSeleterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIPictureSeleterVC.h; path = TPKeyBoardAvoiding/UIPictureSeleterVC.h; sourceTree = "<group>"; };
-		458F40921B21365C004C6B74 /* UIPictureSeleterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIPictureSeleterVC.m; path = TPKeyBoardAvoiding/UIPictureSeleterVC.m; sourceTree = "<group>"; };
 		458F40941B214348004C6B74 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		458F40961B21861A004C6B74 /* PictureItemCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureItemCollectionViewCell.h; sourceTree = "<group>"; };
 		458F40971B21861A004C6B74 /* PictureItemCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureItemCollectionViewCell.m; sourceTree = "<group>"; };
@@ -113,6 +113,8 @@
 		45EC9CFB1AD3CAE000F20938 /* WEBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WEBaseView.m; sourceTree = "<group>"; };
 		45EC9D211AD4D1E600F20938 /* BaseNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationViewController.h; sourceTree = "<group>"; };
 		45EC9D221AD4D1E600F20938 /* BaseNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationViewController.m; sourceTree = "<group>"; };
+		45F5A3361B747B9A0021E826 /* PictureSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureSelectViewController.h; sourceTree = "<group>"; };
+		45F5A3371B747B9A0021E826 /* PictureSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureSelectViewController.m; sourceTree = "<group>"; };
 		45FA55D91B0F000D00A86480 /* AFNManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNManager.h; sourceTree = "<group>"; };
 		45FA55DA1B0F000D00A86480 /* AFNManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNManager.m; sourceTree = "<group>"; };
 		45FA55DB1B0F000D00A86480 /* DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModel.h; sourceTree = "<group>"; };
@@ -206,6 +208,8 @@
 				45C14D5C1B5DDCF0001B2D28 /* PushControllerAnimation.m */,
 				45C14D5E1B5E48D0001B2D28 /* PopControllerAnimation.h */,
 				45C14D5F1B5E48D0001B2D28 /* PopControllerAnimation.m */,
+				4573D0771B70A770001F9C4B /* AnimationBasevViewController.h */,
+				4573D0781B70A770001F9C4B /* AnimationBasevViewController.m */,
 				45C14D611B5E49E4001B2D28 /* Animation.storyboard */,
 				45C14D631B5F645A001B2D28 /* ONeCollectionViewController.h */,
 				45C14D641B5F645A001B2D28 /* ONeCollectionViewController.m */,
@@ -328,13 +332,13 @@
 			isa = PBXGroup;
 			children = (
 				45D483E11B3A80D2000B6A01 /* camera.png */,
-				458F40911B21365C004C6B74 /* UIPictureSeleterVC.h */,
-				458F40921B21365C004C6B74 /* UIPictureSeleterVC.m */,
-				45B9F6131B29239600D8EB49 /* ClickLab.h */,
-				45B9F6141B29239600D8EB49 /* ClickLab.m */,
+				45F5A3361B747B9A0021E826 /* PictureSelectViewController.h */,
+				45F5A3371B747B9A0021E826 /* PictureSelectViewController.m */,
 				458F40961B21861A004C6B74 /* PictureItemCollectionViewCell.h */,
 				458F40971B21861A004C6B74 /* PictureItemCollectionViewCell.m */,
 				458F40981B21861A004C6B74 /* PictureItemCollectionViewCell.xib */,
+				45B9F6131B29239600D8EB49 /* ClickLab.h */,
+				45B9F6141B29239600D8EB49 /* ClickLab.m */,
 				45FA55DE1B0F000D00A86480 /* ScrollView */,
 				45FA55E91B0F000D00A86480 /* tableView+refresh */,
 				45FA55F71B0F000D00A86480 /* TPKeyBoardAvoiding */,
@@ -481,7 +485,7 @@
 		45E2BEEE1A68E2D500A1DDEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = Angelnil;
 				TargetAttributes = {
 					45E2BEF51A68E2D500A1DDEA = {
@@ -517,7 +521,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45EC9D031AD3CAE000F20938 /* Info.plist in Resources */,
 				458F409A1B21861A004C6B74 /* PictureItemCollectionViewCell.xib in Resources */,
 				45EC9D021AD3CAE000F20938 /* Images.xcassets in Resources */,
 				45EC9CFF1AD3CAE000F20938 /* LaunchScreen.xib in Resources */,
@@ -587,10 +590,10 @@
 				458F40891B20296E004C6B74 /* UIColor+ARGBString.m in Sources */,
 				45FA56141B0F000D00A86480 /* YLYPageScrollView.m in Sources */,
 				45C14D6B1B5F6B77001B2D28 /* ONeCollectionViewCell.m in Sources */,
-				458F40931B21365C004C6B74 /* UIPictureSeleterVC.m in Sources */,
 				45FA56131B0F000D00A86480 /* DataModel.m in Sources */,
 				45FA56221B0F000D00A86480 /* FileUtils.m in Sources */,
 				45EC9D041AD3CAE000F20938 /* main.m in Sources */,
+				4573D0791B70A770001F9C4B /* AnimationBasevViewController.m in Sources */,
 				45FA562E1B0F03F200A86480 /* RefreshHeaderAndFooterView.m in Sources */,
 				45C14D651B5F645A001B2D28 /* ONeCollectionViewController.m in Sources */,
 				458F408A1B20296E004C6B74 /* UIView+ViewUtils.m in Sources */,
@@ -609,6 +612,7 @@
 				45FA56161B0F000D00A86480 /* NTopImageScrollView.m in Sources */,
 				45FA561F1B0F000D00A86480 /* TPKeyboardAvoidingTableView.m in Sources */,
 				45FA56231B0F000D00A86480 /* GTMBase64.m in Sources */,
+				45F5A3381B747B9A0021E826 /* PictureSelectViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -684,7 +688,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -720,7 +724,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -734,6 +738,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Wall-E/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -748,6 +753,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Wall-E/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -11,20 +11,30 @@
 
 @interface ONeCollectionViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
 
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (weak, nonatomic) IBOutlet UICollectionViewFlowLayout *flowLayout;
+
 @end
 
 @implementation ONeCollectionViewController
 
-static NSString * const reuseIdentifier = @"Cell";
+static NSString * const reuseIdentifier = @"ONeCollectionViewCell";
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     // Uncomment the following line to preserve selection between presentations
-     self.clearsSelectionOnViewWillAppear = NO;
+    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+    layout.itemSize = CGSizeMake([UIScreen mainScreen].bounds.size.width/3, [UIScreen mainScreen].bounds.size.width/3);
+    layout.minimumLineSpacing = 5;
+    layout.minimumInteritemSpacing = 5;
+
+    self.flowLayout = layout;
     
-    // Register cell classes
-    [self.collectionView registerClass:[ONeCollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
+    self.collectionView.collectionViewLayout = self.flowLayout;
+    self.collectionView.delegate = self;
+    self.collectionView.dataSource = self;
     
     // Do any additional setup after loading the view.
 }
@@ -34,15 +44,18 @@ static NSString * const reuseIdentifier = @"Cell";
     // Dispose of any resources that can be recreated.
 }
 
-/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:NSStringFromClass([OneDetialViewController class])]) {
+        OneDetialViewController *one = (OneDetialViewController *)[segue destinationViewController];
+        one.image = self.selectCell.imageView.image;
+    }
 }
-*/
+
 
 #pragma mark <UICollectionViewDataSource>
 
@@ -52,12 +65,11 @@ static NSString * const reuseIdentifier = @"Cell";
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 5;
+    return 15;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     ONeCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
-    
     // Configure the cell
     
     return cell;
@@ -77,23 +89,14 @@ static NSString * const reuseIdentifier = @"Cell";
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     self.selectCell = (ONeCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
-    OneDetialViewController *one = [[OneDetialViewController alloc] init];
+    
+//     1. 用代码直接 push
+    OneDetialViewController *one = [[UIStoryboard storyboardWithName:@"Animation" bundle:nil] instantiateViewControllerWithIdentifier:NSStringFromClass([OneDetialViewController class])];
     one.image = self.selectCell.imageView.image;
     [self.navigationController pushViewController:one animated:YES];
-}
-
-
-// Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldShowMenuForItemAtIndexPath:(NSIndexPath *)indexPath {
-	return NO;
-}
-
-- (BOOL)collectionView:(UICollectionView *)collectionView canPerformAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	return NO;
-}
-
-- (void)collectionView:(UICollectionView *)collectionView performAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	
+    
+    //2. 用 storyboard 中的 segue 推送
+//    [self performSegueWithIdentifier:NSStringFromClass([OneDetialViewController class]) sender:nil];
 }
 
 

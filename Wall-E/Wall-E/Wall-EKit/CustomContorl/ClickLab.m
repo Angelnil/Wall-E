@@ -252,7 +252,7 @@ void RunDelegateDeallocCallback( void* refCon ){
 }
 
 CGFloat RunDelegateGetAscentCallback( void *refCon ){
-    NSString *imageName = (__bridge NSString *)refCon;
+//    NSString *imageName = (__bridge NSString *)refCon;
     return 80;//[UIImage imageNamed:imageName].size.height;
 }
 
@@ -261,7 +261,7 @@ CGFloat RunDelegateGetDescentCallback(void *refCon){
 }
 
 CGFloat RunDelegateGetWidthCallback(void *refCon){
-    NSString *imageName = (__bridge NSString *)refCon;
+//    NSString *imageName = (__bridge NSString *)refCon;
     return 100;//[UIImage imageNamed:imageName].size.width;
 }
 
